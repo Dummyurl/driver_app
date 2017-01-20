@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Un-Availabillity Schedule"
+            android:id="@+id/driver_unavailabillity_schedule_title"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Schedule"
+            android:id="@+id/driver_weekly_schedule_title"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rideeaze.views.drivershedule.tableview.WeeklyScheduleTableView
+            android:id="@+id/weekly_schedule_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:columnCount="5"
+            custom:headerElevation="10"
+            custom:headerColor="#ffffff"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Day Schedule"
+            android:id="@+id/driver_single_day_schedule_title"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rideeaze.views.drivershedule.tableview.SingleDayScheduleTableView
+            android:id="@+id/single_day_schedule_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:columnCount="5"
+            custom:headerElevation="0"
+            custom:headerColor="#ffffff"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_add"
+            android:id="@+id/openModifySheduleBtn"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_NumberPicker"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66666666" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:id="@+id/ll_Tabbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tabbar_picker"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_picker"
+                android:text="Cancel"
+                android:textColor="#CCCCCC" />
+
+            <Button
+                android:id="@+id/btn_Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/btn_cancel"
+                android:background="@drawable/btn_picker"
+                android:text="Done"
+                android:textColor="#CCCCCC" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_Tabbar"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="16" 
+            android:background="@drawable/layout_bg">
+
+            <LinearLayout
+                android:id="@+id/Datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="3"
+                android:background="@drawable/layout_bg"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp" >
+
+                <com.rideeaze.widget.WheelView
+                    android:id="@+id/wheel1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Numberpicker"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="8"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <com.rideeaze.widget.WheelView
+                    android:id="@+id/wheelDt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yearpicker"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="5"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp" >
+
+                <com.rideeaze.widget.WheelView
+                    android:id="@+id/wheelyr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

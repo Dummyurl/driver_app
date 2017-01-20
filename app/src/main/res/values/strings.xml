@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RideEzeDriver</string>
+    <string name="action_settings">Settings</string>
+    <string name="driver_next">Next</string>
+    <string name="driver_dialog_email">email</string>
+    <string name="driver_dialog_password">password</string>
+    <string name="driver_ui_login">LOG IN</string>
+    <string name="driver_ui_cancel">Cancel</string>
+    <string name="driver_ui_create_account">Create Account</string>
+    <string name="driver_error_invalid_email">Please Input your Email Address</string>
+    <string name="driver_error_non_selected_ccreader">Please select credit card reader</string>
+    <string name="valid_propr_mail">Please Input your proper Mail Address</string>
+    <string name="driver_error_invalid_password">Please Input your Password</string>
+    <string name="driver_error_non_match_password">The Password you entered do not match. Please re-enter and try again.</string>
+    <string name="driver_checkaccount_haveaccount_checkbox_text">Already have a RideEze Account</string>
+    <string name="driver_checkaccount_nothaveaccount_checkbox_text">I do not have an Account</string>
+    <string name="driver_checkaccount_haveaccount_textbox_text">If you ordered the credit card reader on HereApproved website,select this option</string>
+    <string name="driver_checkaccount_nothaveaccount_textbox_text">You will need a Merchant ID to register your app. Please  ask the person that  ordered the credit card reader for this  information</string>
+    <string name="driver_no_internet_connection">There is no Internet Connection. Please try after sometimes</string>
+    <string name="driver_common_please_wait">Please wait</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="driver_forgot_pass">Forgot Password?</string>
+    <string name="retrieveYourPassword">Retrieve Your Password</string>
+    <string name="retrievePassword">Retrieve Password</string>
+    <string name="yourEmail">Your Email</string>
+    <string name="passangerDeclined">Passenger Declined</string>
+    <string name="is_send_to_passanger">Send to passenger\'s phone to approval</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_save">Save</string>
+    <string name="common_add">Add</string>
+
+    <string name="new_transaction_btn_label">New Transaction</string>
+    <string name="send_email_receipt_btn_label">Send Email Receipt</string>
+    <string-array name="credit_card_reader_list">
+        <item>None</item>
+        <item>BTMag</item>
+        <item>Square</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="driver_ui_next">NEXT</string>
+    <string name="driver_ui_register">REGISTER</string>
+    <string name="driver_dialog_confirm_password">confirm password</string>
+    <string name="driver_error_invalid_validate_email">Invalid email address, Please Input your Email Address</string>
+    <string name="driver_ui_need_an_account_first">Need an account?</string>
+    <string name="driver_ui_need_an_account_second">Register</string>
+    <string name="driver_ui_first_name">First Name</string>
+    <string name="driver_ui_mid_name">Middle Name</string>
+    <string name="driver_ui_mid_name_settings">Middle</string>
+    <string name="driver_ui_last_name">Last Name</string>
+    <string name="driver_ui_phone">Phone</string>
+    <string name="driver_ui_merchant_id">Merchant ID</string>
+    <string name="driver_ui_card_reader">Card Reader</string>
+
+    <string name="driver_ui_forgot_pass">Forgot password?</string>
+    <string name="driver_ui_forgot_pass_btn">SEND</string>
+
+    <string name="vehicle_ui_id_title">Vehicle ID</string>
+    <string name="vehicle_ui_class_title">Class</string>
+    <string name="vehicle_ui_style_title">Style</string>
+    <string name="vehicle_ui_color_title">Color</string>
+    <string name="vehicle_ui_year_title">Year</string>
+    <string name="vehicle_ui_make_title">Make</string>
+    <string name="vehicle_ui_model_title">Model</string>
+    <string name="vehicle_ui_maxpassengers_title">Max Passengers</string>
+    <string name="vehicle_ui_other_features_title">Other Features</string>
+    <string name="vehicle_ui_nosmoking1">No</string>
+    <string name="vehicle_ui_nosmoking2">Smoking</string>
+    <string name="vehicle_ui_handicap_accessible1">Handicap</string>
+    <string name="vehicle_ui_handicap_accessible2">Accessible</string>
+    <string name="vehicle_ui_accept_cards1">Accept</string>
+    <string name="vehicle_ui_accept_cards2">Cards</string>
+
+    <string name="vehicle_ui_class_title_private">PRIVATE</string>
+    <string name="vehicle_ui_class_title_taxi">TAXI</string>
+    <string name="vehicle_ui_class_title_carservice">CAR SERVICE</string>
+
+    <string name="vehicle_ui_car_title_sedan">SEDAN</string>
+    <string name="vehicle_ui_car_title_suv">SUV</string>
+    <string name="vehicle_ui_car_title_limo">LIMO</string>
+    <string name="vehicle_ui_car_title_van">VAN</string>
+    <string name="vehicle_ui_car_title_shuttle">SHUTTLE</string>
+    <string name="vehicle_ui_car_title_bus">BUS</string>
+
+    <string name="vehicle_ui_color_arrow_title">COLOR</string>
+
+    <string name="vehicle_ui_cancel_title">Cancel</string>
+    <string name="vehicle_ui_update_title">Update</string>
+
+    <string name="settings_ui_main_title">Settings</string>
+    <string name="settings_ui_vehicle">My Vehicle</string>
+    <string name="settings_ui_update_vehicle">Update My Vehicle</string>
+    <string name="settings_ui_update_profile">Update My Profile</string>
+    <string name="settings_ui_gps">GPS Settings</string>
+    <string name="settings_ui_gps_title">GPS</string>
+    <string name="settings_ui_help">Help Support</string>
+    <string name="settings_ui_button_title">LOG OUT</string>
+    <string name="settings_ui_myprofile">My Profile</string>
+    <string name="settings_gps_signal_title">Signal</string>
+    <string name="settings_gps_active_title">Active</string>
+    <string name="settings_help_tv1">Frequently Asked Questions</string>
+    <string name="settings_help_tv2">Submit A Help Ticket</string>
+
+
+    <!-- Credit card accept-->
+    <string name="status_card_reader_text_no_card">No card reader detected</string>
+    <string name="instruction_card_reader_text_no_card">PLEASE CONNECT READER</string>
+    <string name="status_card_reader_text_accept_card">Card reader ready</string>
+    <string name="instruction_card_reader_text_accept_card">PLEASE SWIPE CARD</string>
+
+    <!-- Popup Simple Info Dialog -->
+    <string name="success_status_text">PAYMENT ACCEPTED!</string>
+    <string name="success_instructions_text"></string>
+    <string name="decline_status_text">CARD DECLINED</string>
+    <string name="decline_instructions_text">Please request a different from of payment</string>
+    <string name="fail_status_text">UNABLE TO READ CARD</string>
+    <string name="fail_instructions_text">Please try again or use a different card</string>
+    <string name="authorizing_payment">Authorizing Payment</string>
+    <string name="procesing_invalid_email">Invalid email address</string>
+
+
+    <!-- Log In/ Sign Up -->
+    <string name="driver_authorization_error_credentials">Login user name or password are incorrect. Please try again"</string>
+    <string name="title_activity_notes_activity">notes_activity</string>
+    <string name="select_your_vehicle_in_setting">Please select your vehicle in Settings.</string>
+    <string name="driver_update_call_in_morning">Give me a wake up call in the morning</string>
+
+    <string name="please_select_vehicle">Please select vehicle</string>
+
+
+
+</resources>

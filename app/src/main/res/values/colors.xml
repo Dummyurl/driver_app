@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#324f85</color>
+    <color name="dark_gray">#868686</color>
+    <color name="dialog_background">#d6d6d6</color>
+    <color name="black">#000000</color>
+    <color name="green">#009e0f</color>
+    <color name="dark_graylight">#404040</color>
+    <color name="account_bg">#e5efd4</color>
+    <color name="account_ab">#BABD9B</color>
+    <color name="settings_help">#448ccb</color>
+    <color name="passenger_status_active">#C7FF99</color>
+    <color name="passenger_status_canceled">#FFF799</color>
+    <color name="passenger_status_pending">#efd9d4</color>
+    <color name="passenger_status_complete_not_payed">#CCCCCC</color>
+    <color name="passenger_status_complete_payed">#FFFFFF</color>
+    <color name="transparent_false">#80e5efd4</color>
+    <color name="transparent_true">#00000000</color>
+    <color name="rideeze_dark_brown">#545454</color>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#80000000"
+    android:weightSum="1">
+    <!--android:background="#80000000"-->
+
+    <!-- http://stackoverflow.com/questions/25174165/transparent-alertdialog-has-black-background -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_rl_private"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/class_image_bg_1"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp">
+                <!--android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"-->
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/class_btn_private"
+                    android:background="@drawable/vehicle_class_bg_top_click"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/class_private_tv"
+                    android:background="@drawable/vehicle_class_p_click"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/class_image_bg_1"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_1"
+                    android:background="@drawable/vehicle_class_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_class_title_private"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/arrow_1"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_rl_taxi"
+            android:orientation="horizontal"
+            android:layout_below="@+id/class_rl_private">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/class_image_bg_2"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp">
+                <!--android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"-->
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/class_btn_taxi"
+                    android:background="@drawable/vehicle_class_bg_center_click"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/class_taxi_tv"
+                    android:background="@drawable/vehicle_class_t_click_off"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/class_image_bg_2"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_2"
+                    android:background="@drawable/vehicle_class_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_class_title_taxi"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/arrow_2"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_rl_carservice"
+            android:orientation="horizontal"
+            android:layout_below="@+id/class_rl_taxi">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/class_image_bg_3"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp">
+                <!--android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"-->S
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/class_btn_carservice"
+                    android:background="@drawable/vehicle_class_bg_bottom_click"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/class_carservice_tv"
+                    android:background="@drawable/vehicle_class_c_click_off"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_3"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/class_image_bg_3"
+                android:layout_marginLeft="5dp"
+                android:saveEnabled="false">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_3"
+                    android:background="@drawable/vehicle_class_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_class_title_carservice"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/arrow_3"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+S
+
+    </RelativeLayout>
+
+</LinearLayout>

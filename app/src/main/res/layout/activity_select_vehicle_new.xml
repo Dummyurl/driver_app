@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:scrollbars="none"
+    android:id="@+id/update_vehicle_scrollview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_linear_layout"
+        android:orientation="vertical">
+
+        <!-- LinearLayout for image *My vehicle*-->
+        <!--<ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/vehicle_title" />-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_relative_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_ui_vehicle"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="22dp"/>
+
+        </RelativeLayout>
+
+        <!-- LinearLayout for vehicle car && shadow-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_cancel_title"
+                    android:background="@color/account_bg"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_update_title"
+                    android:layout_toRightOf="@+id/button_cancel"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/account_bg"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vehicle_image_ll"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/vehicle_image_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_limo_white"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:id="@+id/vehicle_image_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-38dp"
+                android:src="@drawable/vehicle_shadow"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!-- LinearLayout for vehicle-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_ll"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vehicle_rl">
+
+                <Spinner
+                    android:id="@+id/vehicle_num_list"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+                <EditText
+                    android:id="@+id/vehicle_num_edit"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/vehicle_num_list_button"
+                    android:background="@drawable/vehicle_markdown"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/vehicle_tv"
+                    android:text="@string/vehicle_ui_id_title"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/vehicle_num_list"
+
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- LL for separation line 1-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/separation_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_separation_line"/>
+
+        </LinearLayout>
+
+        <!-- LL for Class && Style && Color -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/class_rl"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/class_popup_button_rl"
+                    >
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/class_popup_button"
+                        android:background="@drawable/vehicle_classfield"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/class_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/class_popup_button_rl"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/vehicle_ui_class_title"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/style_rl"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/style_popup_button_rl"
+                    android:background="@drawable/vehicle_stylefield">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/style_popup_button" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/style_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/style_popup_button_rl"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/vehicle_ui_style_title"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color_rl"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/color_popup_button"
+                    android:background="@drawable/vehicle_classfield"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/color_popup_button"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/vehicle_ui_color_title"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- LL for separation line 2-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/separation_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_separation_line"/>
+
+        </LinearLayout>
+
+        <!-- for Year && Make && Model && MaxPassengers-->
+        <!-- for Year -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/year_ll"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year_rl">
+
+                <!--<Spinner-->
+                <Spinner
+                    android:id="@+id/year"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/year_markdown_button"
+                    android:background="@drawable/vehicle_markdown"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/year_tv"
+                    android:text="@string/vehicle_ui_year_title"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/year"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/make_ll"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/make_rl">
+
+                <!--<Spinner-->
+                <EditText
+                    android:id="@+id/make"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+                <!--<Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/make_markdown_button"
+                    android:background="@drawable/vehicle_markdown"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/make_tv"
+                    android:text="@string/vehicle_ui_make_title"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/make"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/model_ll"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/model_rl">
+
+                <!--<Spinner-->
+                <EditText
+                    android:id="@+id/model"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+                <!--<Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/model_markdown_button"
+                    android:background="@drawable/vehicle_markdown"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/model_tv"
+                    android:text="@string/vehicle_ui_model_title"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/model"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maxpassengers_ll"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maxpassengers_rl">
+
+                <Spinner
+                    android:id="@+id/maxpassengers_list"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/vehicle_field_small"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/maxpassengers_markdown_button"
+                    android:background="@drawable/vehicle_markdown"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/maxpassengers_tv"
+                    android:text="@string/vehicle_ui_maxpassengers_title"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/maxpassengers_list"
+
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <!-- LL for separation line 3-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/separation_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_separation_line"/>
+
+        </LinearLayout>
+
+        <!-- LinearLayout for button Other Features-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/features_title_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/features_title"
+                    android:text="@string/vehicle_ui_other_features_title"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nosmoking_rl">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/nosmoking_imageView"
+                            android:background="@drawable/vehicle_nosmokinglabel"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nosmoking_tv1"
+                            android:layout_below="@+id/nosmoking_imageView"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/vehicle_ui_nosmoking1"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nosmoking_tv2"
+                            android:layout_below="@+id/nosmoking_tv1"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/vehicle_ui_nosmoking2"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                    <ToggleButton
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        android:id="@+id/noSmoking"
+                        android:background="@drawable/toggle_bg_new"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/handicapAccessible_rl"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/handicapAccessible_imageView"
+                            android:background="@drawable/vehicle_handicaplabel"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/handicapAccessible_tv1"
+                            android:layout_below="@+id/handicapAccessible_imageView"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/vehicle_ui_handicap_accessible1"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/handicapAccessible_tv2"
+                            android:layout_below="@+id/handicapAccessible_tv1"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/vehicle_ui_handicap_accessible2"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                    <ToggleButton
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        android:id="@+id/handicapAccess"
+                        android:background="@drawable/toggle_bg_new"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/acceptcards_rl"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/acceptcards_imageView"
+                            android:background="@drawable/vehicle_acceptcardslabel"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/acceptcards_tv1"
+                            android:layout_below="@+id/acceptcards_imageView"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/vehicle_ui_accept_cards1"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/acceptcards_tv2"
+                            android:layout_below="@+id/acceptcards_tv1"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/vehicle_ui_accept_cards2"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                    <ToggleButton
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        android:id="@+id/takeCC"
+                        android:background="@drawable/toggle_bg_new"
+                        android:textOff=""
+                        android:textOn=""/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- LinearLayout for button Cancel && Update-->
+
+    </LinearLayout>
+
+</ScrollView>

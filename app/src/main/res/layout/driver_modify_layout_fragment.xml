@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customAttrs="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start Date:"
+            android:id="@+id/startDateTextView"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <com.rideeaze.widget.DatePickerTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            customAttrs:pickerType="date"
+            android:id="@+id/startDatePicker"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="End Date:"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <com.rideeaze.widget.DatePickerTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            customAttrs:pickerType="date"
+            android:id="@+id/endDatePicker"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start Time:"
+            android:id="@+id/startTimeTextView"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <com.rideeaze.widget.DatePickerTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            customAttrs:pickerType="time"
+            android:id="@+id/startTimePicker"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="End Time:"
+            android:id="@+id/endTimeTextView"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <com.rideeaze.widget.DatePickerTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            customAttrs:pickerType="time"
+            android:id="@+id/endTimePicker"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rideeaze.widget.WeekDateSheduleChecker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/week_date_schedule_checker">
+
+        </com.rideeaze.widget.WeekDateSheduleChecker>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shedule_delete_btn"
+            android:text="@string/common_delete"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedule_save_btn"
+            android:text="@string/common_save"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp" />
+    </FrameLayout>
+</LinearLayout>

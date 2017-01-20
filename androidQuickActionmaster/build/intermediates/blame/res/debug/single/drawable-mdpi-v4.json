@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_top_frame.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_top_frame.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_grid_bottom_frame.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_grid_bottom_frame.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_grid_arrow_down.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_grid_arrow_down.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_action_bar_compose.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_action_bar_compose.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_background.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_background.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_action_bar_edit.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_action_bar_edit.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_grip_right.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_grip_right.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_arrow_up.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_arrow_up.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_grid_selector_focused.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_grid_selector_focused.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_arrow_down.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_arrow_down.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_item_normal.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_item_normal.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_grip_left.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_grip_left.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_grid_bg.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_grid_bg.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_grid_selector_pressed.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_grid_selector_pressed.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_item_pressed.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_item_pressed.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_bottom_frame.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_bottom_frame.9.png"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/debug/drawable-mdpi-v4/gd_quick_action_bar_item_selected.9.png",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/src/main/res/drawable-mdpi/gd_quick_action_bar_item_selected.9.png"
+    }
+]

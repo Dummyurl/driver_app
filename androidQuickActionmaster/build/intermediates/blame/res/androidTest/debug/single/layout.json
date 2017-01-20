@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/layout/gd_quick_action_grid.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/layout/gd_quick_action_grid.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/layout/gd_quick_action_bar_item.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/layout/gd_quick_action_bar_item.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/layout/gd_quick_action_grid_item.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/layout/gd_quick_action_grid_item.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/layout/gd_quick_action_bar.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/layout/gd_quick_action_bar.xml"
+    }
+]

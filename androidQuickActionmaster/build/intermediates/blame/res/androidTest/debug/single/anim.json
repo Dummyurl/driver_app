@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_bottomleft_to_topright.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_bottomleft_to_topright.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_bottom.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_bottom.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_top.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_top.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_bottomright_to_topleft.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_bottomright_to_topleft.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_bottomright_to_topleft.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_bottomright_to_topleft.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_bottomleft_to_topright.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_bottomleft_to_topright.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_top.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_top.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_topright_to_bottomleft.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_topright_to_bottomleft.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_grow_from_topleft_to_bottomright.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_grow_from_topleft_to_bottomright.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_bottom.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_bottom.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_topright_to_bottomleft.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_topright_to_bottomleft.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_rack.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_rack.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/anim/gd_shrink_from_topleft_to_bottomright.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/anim/gd_shrink_from_topleft_to_bottomright.xml"
+    }
+]

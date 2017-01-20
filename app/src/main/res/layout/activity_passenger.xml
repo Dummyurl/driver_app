@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/dark_graylight" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mytrip_nav_bar"
+                android:layout_toLeftOf="@+id/setting_footer_btn"
+                android:layout_toRightOf="@+id/map_footer_btn">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btnPassFront"
+                    android:src="@drawable/mytrip_left_two"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPassPrevious"
+                    android:src="@drawable/mytrip_left_one"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0/0"
+                    android:id="@+id/mytrip_text_main"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPassNext"
+                    android:src="@drawable/mytrip_right_one"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnPassEnd"
+                    android:src="@drawable/mytrip_right_two"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btn_to_home"
+                        android:layout_margin="5dp"
+                        android:background="@color/dark_graylight"
+                        android:src="@drawable/passenger_screen_home"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btn_to_list"
+                        android:layout_margin="5dp"
+                        android:background="@color/dark_graylight"
+                        android:src="@drawable/passenger_screen_list"
+                        android:scaleType="fitCenter"
+                        android:padding="2dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btn_to_dollars"
+                        android:layout_margin="5dp"
+                        android:background="@color/dark_graylight"
+                        android:src="@drawable/passenger_screen_payment"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:weightSum="1"
+                        android:layout_marginRight="10dp">
+                        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                        <TextView
+                            android:id="@+id/passengerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/dark_graylight"
+                            android:textStyle="bold"
+                            android:text="123"
+                            android:layout_gravity="left"
+                            android:gravity="left" />
+
+                        <RatingBar
+                            android:id="@+id/passengerRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:minHeight="34dp"
+                            android:progressDrawable="@drawable/custom_rating"
+                            android:rating="3.0"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/numberOfPassengers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_graylight"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="123" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/numberOfSuitcases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_graylight"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="right" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#0000ff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Phone:"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal">
+                        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                        <TextView
+                            android:id="@+id/phoneNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#0000ff"
+                            android:textSize="14sp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#0000ff" >
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/pick_up_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pickup Time:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/pick_up_time_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_graylight"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pickup At:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/pickLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_graylight"
+                        android:layout_toRightOf="@+id/TextView02"
+                        android:layout_toLeftOf="@+id/routeToPickup"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/routeToPickup"
+                        android:src="@drawable/settings_screen_pin"
+                        android:background="@color/dark_graylight"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Destination:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/dropLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/dark_graylight"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp"
+                        android:layout_toRightOf="@+id/TextView03"
+                        android:layout_toLeftOf="@+id/routeToDest"
+                        android:layout_marginRight="4dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/routeToDest"
+                        android:src="@drawable/settings_screen_pin"
+                        android:background="@color/dark_graylight"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/vehicle_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vehicle:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/vehicle_desc_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_graylight" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="10dp">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/tvNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Notes"
+                        android:focusable="false"
+                        android:textColor="#0080ff"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_horizontal" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/tvAlertPassenger"
+                        android:layout_width="wrap_content"
+                        android:text="Alert Passenger"
+                        android:focusable="false"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#0080ff"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/tvFareDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Fare:"
+                        android:textColor="#0080ff"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_horizontal" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/fare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/dark_graylight"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/txtFormOPaymentLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Form of Payment:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/txtFormOfPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/dark_graylight"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/reservationId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Reservation ID:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/reservationId_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/dark_graylight"
+                        android:layout_marginRight="10dp"
+                        android:ellipsize="end"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/trip_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Trip Length:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/trip_length_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/dark_graylight"
+
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Trip Time:"
+                        android:textColor="@color/dark_graylight"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_graylight"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <TextView
+                        android:id="@+id/flight_info_bnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Check Flight Status"
+                        android:focusable="false"
+                        android:textColor="#0080ff"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/pendingLayout"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_above="@+id/linearLayout_pending"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/statusPendingLayout"
+                android:padding="5dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/statusViewPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dark_graylight"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/linearLayout_pending"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/dark_graylight"
+                    android:layout_marginBottom="15dp"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/accept_pending"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="BACK"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/dark_graylight">
+
+                    <TextView
+                        android:id="@+id/decline_pending"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="DECLINE"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/reviewCancelLayout"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_above="@+id/bottomBtnLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/statusViewLayout"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/statusView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dark_graylight"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/bottomBtnLayout">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_graylight"
+                    android:padding="5dp"
+                    android:id="@+id/frameLayout"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center|bottom">
+
+                    <TextView
+                        android:id="@+id/rate_passenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Write Review"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="2dp" />
+
+                    <TextView
+                        android:id="@+id/cancelPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="DECLINE PICKUP"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="2dp" />
+                </FrameLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#868686" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+                <!--style="?android:attr/buttonStyleSmall"-->
+                <!--<Button
+                    android:id="@+id/routeToPickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="35dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Navigate to Pickup Location"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+                <!-- style="?android:attr/buttonStyleSmall"-->
+                <!--<Button
+                    android:id="@+id/routeToDest"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="35dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Navigate to Destination"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!--<Button
+                    android:id="@+id/rate_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:text="Rate Passenger"
+                    android:textColor="@color/blue" />-->
+
+                <!--<Button
+                    android:id="@+id/cancelPickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:text="Cancel Pickup"
+                    android:textColor="@color/blue" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!--<Button
+                    android:id="@+id/alertPassanger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:text="Alert Passenger"
+                    android:textColor="@color/blue" />-->
+
+                <Button
+                    android:id="@+id/payCC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:text="Collect Payment"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+                <Button
+                    android:id="@+id/payUnknownCC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:text="@string/new_transaction_btn_label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+
+                <Button
+                    android:id="@+id/close_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:minHeight="30dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Close"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btnPassFront_old"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_pickup_front_bg" />
+
+            <Button
+                android:id="@+id/btnPassPrevious_old"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_pickup_previous_bg" />
+
+            <Button
+                android:id="@+id/btnPassNext_old"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_pickup_next_bg" />
+
+            <Button
+                android:id="@+id/btnPassEnd_old"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/setting_pickup_end_bg" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

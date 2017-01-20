@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Please sign below"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+  <!-- <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" > -->  
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llSignCanvas"
+                android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:background="@drawable/black_border"
+                android:orientation="vertical"
+                android:padding="10dp" >
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rbPayCrdtcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I am paying with a credit card"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbPayCash"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I am paying with cash"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtSignConfrmNext"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_accept_bg"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+ <!--   </ScrollView> --> 
+
+</LinearLayout>

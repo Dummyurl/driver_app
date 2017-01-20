@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/drawable/gd_quick_action_grid_selector.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/drawable/gd_quick_action_grid_selector.xml"
+    },
+    {
+        "merged": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/res/merged/androidTest/debug/drawable/gd_quick_action_bar_item.xml",
+        "source": "/home/ourdesignz/Android_Studio_Workspace/DriverApp/androidQuickActionmaster/build/intermediates/bundles/debug/res/drawable/gd_quick_action_bar_item.xml"
+    }
+]

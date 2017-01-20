@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:orientation="vertical">
+
+    <!-- for normal -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_et_relative_layout">
+
+            <EditText
+                android:id="@+id/driver_activity_signup_email"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_dialog_email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/acc_top"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <!-- <EditText
+            android:id="@+id/driver_activity_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:ems="10"
+            android:hint="@string/driver_dialog_email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/acc_top"/> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_et_relative_layout"
+            android:layout_below="@+id/email_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/driver_activity_signup_password"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_dialog_password"
+                android:inputType="textPassword"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <!--<EditText
+            android:id="@+id/driver_activity_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:ems="10"
+            android:hint="@string/driver_dialog_password"
+            android:inputType="textPassword"
+            android:background="@drawable/acc_middle"
+        /> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password_et_relative_layout"
+            android:layout_below="@+id/password_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/driver_activity_signup_confirm_password"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_dialog_confirm_password"
+                android:inputType="textPassword"
+                android:background="@drawable/acc_bottom"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <!-- <EditText
+            android:id="@+id/driver_activity_signup_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:ems="10"
+            android:hint="@string/driver_dialog_confirm_password"
+            android:inputType="textPassword"
+            android:background="@drawable/acc_bottom"/> -->
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_btn_relative_layout"
+            android:layout_below="@+id/confirm_password_et_relative_layout"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/driver_activity_signup_next"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/acc_button_next"
+                android:text="@string/driver_ui_next"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/driver_activity_signup_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text="@string/driver_ui_next"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/credit_card_reader"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:ems="10"/>
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

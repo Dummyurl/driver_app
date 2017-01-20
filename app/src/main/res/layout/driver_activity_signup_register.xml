@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:orientation="vertical"
+    android:id="@+id/main_ll">
+
+    <!-- for normal -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstName_et_relative_layout">
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_ui_first_name"
+                android:inputType="textCapSentences"
+                android:background="@drawable/acc_top"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/midName_et_relative_layout"
+            android:layout_below="@+id/firstName_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/midName"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_ui_mid_name"
+                android:inputType="textCapSentences"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastName_et_relative_layout"
+            android:layout_below="@+id/midName_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_ui_last_name"
+                android:inputType="textCapSentences"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_number_et_relative_layout"
+            android:layout_below="@+id/lastName_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_ui_phone"
+                android:inputType="numberDecimal|phone"
+                android:maxEms="10"
+                android:maxLength="14"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/merchant_id_et_relative_layout"
+            android:layout_below="@+id/mobile_number_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/merchant_id"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/driver_ui_merchant_id"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp"/>
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/help_merchant_id"
+                android:background="@drawable/acc_button_help"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@+id/merchant_id"
+                android:layout_marginRight="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_code_et_relative_layout"
+            android:layout_below="@+id/merchant_id_et_relative_layout"
+            android:layout_marginTop="4dp" >
+
+            <EditText
+                android:id="@+id/driver_code"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:hint="Driver Code"
+                android:ems="10"
+                android:background="@drawable/acc_middle"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/help_driver_code"
+                android:background="@drawable/acc_button_help"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@+id/driver_code"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/credit_card_reader_sp_relative_layout"
+            android:layout_below="@+id/driver_code_et_relative_layout"
+            android:layout_marginTop="4dp">
+
+            <Spinner
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:ems="10"
+                android:background="@drawable/acc_bottom"
+                android:hint="@string/driver_ui_card_reader"
+                android:id="@+id/cardReaderList" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_btn_relative_layout"
+            android:layout_below="@+id/credit_card_reader_sp_relative_layout"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/driver_activity_signup_register"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/acc_button_next"
+                android:text="@string/driver_ui_register"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="(First)"
+        android:inputType="textCapSentences" >
+    </EditText>-->
+
+    <!--
+    <EditText
+        android:id="@+id/midName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="(Middle)"
+        android:inputType="textCapSentences" /> -->
+
+    <!--<EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="(Last)"
+        android:inputType="textCapSentences" />-->
+
+    <!--<EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="numberDecimal|phone"
+        android:maxEms="10"
+        android:maxLength="14"/>-->
+
+    <!--<EditText
+        android:id="@+id/merchant_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="Merchant ID"
+        android:inputType="numberDecimal"
+        android:drawableRight="@drawable/my_icon"/>-->
+
+    <!--<Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/credit_card_reader"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:ems="10" />-->
+
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/credit_card_reader"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"
+            android:ems="10"/>
+    </LinearLayout>-->
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/driver_activity_signup_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/driver_ui_register"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout> -->
+
+</LinearLayout>

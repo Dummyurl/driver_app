@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_relative_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_ui_help"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_relative_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings_help_text"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_relative_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/submit_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_help_tv1"
+            android:textStyle="bold"
+            android:textColor="@color/settings_help"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/submit_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_help_tv2"
+            android:textStyle="bold"
+            android:textColor="@color/settings_help"
+            android:textSize="22dp"
+            android:layout_below="@+id/submit_tv1"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

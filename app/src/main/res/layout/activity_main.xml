@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="58dp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio_off"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radio_off"
+            android:layout_width="75dp"
+            android:layout_height="34dp"
+            android:background="@drawable/radio1_bg"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Off" />
+
+        <RadioButton
+            android:id="@+id/radio_Busy"
+            android:layout_width="75dp"
+            android:layout_height="34dp"
+            android:background="@drawable/radio1_bg"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Busy" />
+
+        <RadioButton
+            android:id="@+id/radio_avaliable"
+            android:layout_width="91dp"
+            android:layout_height="34dp"
+            android:background="@drawable/radio1_bg"
+            android:button="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Available" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/main_background"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceptCall_rl"
+            android:focusable="false"
+            android:background="@drawable/main_background_left"
+            android:layout_weight="0.28"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/acceptCall"
+                android:focusable="false"
+                android:background="@drawable/main_acceptcall"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Trips"
+                android:id="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trips"
+                android:focusable="false"
+                android:id="@+id/textView7"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout3"
+            android:focusable="false"
+            android:background="@drawable/main_background_left"
+            android:layout_weight="0.28" >
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/menuBtn"
+                android:focusable="false"
+                android:background="@drawable/main_acceptcall"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Trips"
+                android:id="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/information_rl"
+            android:focusable="false"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/information"
+                android:background="@drawable/main_information"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:focusable="false"
+                android:id="@+id/textView9"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/circle_rl"
+            android:layout_weight="3">
+
+
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/circle_temp"
+                android:background="@drawable/main_indicator"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/indicator_rl"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:id="@+id/indicator"
+                android:background="@drawable/main_indicator"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/textView15"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/relativeLayout2"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:id="@+id/callOfficeBtn"
+                android:background="@drawable/main_indicator"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Office"
+                android:id="@+id/textView4"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/settings_rl"
+            android:layout_weight="1"
+            android:background="@drawable/main_background_right"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/setting"
+                android:background="@drawable/main_setting"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:id="@+id/textView16"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle"
+        android:background="@drawable/main_circle_minus_clear_off"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Version x.x"
+        android:id="@+id/tvVersion"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp" />
+    <!--<TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="OFF"
+        android:id="@+id/circle_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>

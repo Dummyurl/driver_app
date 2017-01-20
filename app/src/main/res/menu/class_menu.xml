@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/setCar"
+        android:icon="@drawable/vehicle_class_c_click"
+        android:title="Car" />
+
+    <item
+        android:id="@+id/setTaxi"
+        android:icon="@drawable/vehicle_class_t_click"
+        android:title="Taxi" />
+
+    <item
+        android:id="@+id/setService"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/setService1"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/setService2"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/setService3"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/setService4"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/setService5"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+    <item
+        android:id="@+id/setService6"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+    <item
+        android:id="@+id/setService7"
+        android:icon="@drawable/vehicle_class_p_click"
+        android:title="Service" />
+
+
+
+
+
+</menu>

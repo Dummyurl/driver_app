@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/account_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_relative_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_ui_myprofile"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_fields_ll"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname_rl">
+
+            <EditText
+                android:id="@+id/firstname_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/firstname_tv"
+                android:text="@string/driver_ui_first_name"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/firstname_field"
+                android:layout_marginRight="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/middle_rl"
+            android:layout_below="@+id/firstname_rl"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/middle_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/middle_tv"
+                android:text="@string/driver_ui_mid_name_settings"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/middle_field"
+                android:layout_marginRight="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname_rl"
+            android:layout_below="@+id/middle_rl"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/lastname_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/lastname_tv"
+                android:text="@string/driver_ui_last_name"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/lastname_field"
+                android:layout_marginRight="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_rl"
+            android:layout_below="@+id/lastname_rl"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/phone_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/phone_tv"
+                android:text="@string/driver_ui_phone"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/phone_field"
+                android:layout_marginRight="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/merchant_id_rl"
+            android:layout_below="@+id/phone_rl"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/merchant_id_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/merchant_id_tv"
+                android:text="@string/driver_ui_merchant_id"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/merchant_id_field"
+                android:layout_marginRight="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_code_rl"
+            android:layout_below="@+id/phone_rl"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/driver_code_id_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/driver_code_id_tv"
+                android:text="Driver Code"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/driver_code_id_field"
+                android:layout_marginRight="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_rl"
+            android:layout_below="@+id/phone_rl"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:background="@drawable/settings_myprofile_field"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/email_tv"
+                android:text="Email"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/email_field"
+                android:layout_marginRight="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_below="@+id/phone_rl"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_update_call_in_morning"
+                android:id="@+id/call_in_morning_switch"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000000"
+                android:buttonTint="#000000" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- LinearLayout for button Cancel && Update-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/settings_fields_ll"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_ui_cancel_title"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Button
+                android:id="@+id/button_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_ui_update_title"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

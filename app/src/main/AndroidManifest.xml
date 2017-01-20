@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rideeaze">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.rideeaze.views.fragmentactivity.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.driverapp.views.fragmentactivity.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission
+        android:name="com.rideeaze.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.driverapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.rideeaze.HGBDriverApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+       >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA8uSWN3r4r-tBDtGyO24ubiLWJxP3h-Hc" />
+
+        <activity android:name="com.rideeaze.views.activity.DriverMainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.PassengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.VehicleActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.PassengerRatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.CancelPickupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.SplashActivityOld"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.rideeaze.views.activity.DriverCreateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.activity.DriverBeforeCancellingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.rideeaze.views.activity.DriverUpdateProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCustomCompatTheme"/>
+        <activity
+            android:name="com.rideeaze.views.activity.DriverPhoneSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.AddTipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.AdjustAmountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.ApproveTipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.CollectFronUnknownActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.EnterAmountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.HandKeyedTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.PaymentActivityBT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.SendInvoceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.SignConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.PassengerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rideeaze.views.activity.FareDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.rideeaze.uc.WheelDateActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.rideeaze.uc.WheelActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.rideeaze.views.activity.DriverForgotPasswordActivity"
+            android:parentActivityName="com.rideeaze.views.activity.DriverMainActivity"
+            android:label="ForgotPassword"
+            android:theme="@style/AppThemeAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rideeaze.views.activity.DriverMainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rideeaze.views.activity.DriverSignUpActivity"
+            android:parentActivityName="com.rideeaze.views.activity.DriverMainActivity"
+            android:label="Account"
+            android:theme="@style/AppThemeAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rideeaze.views.activity.DriverMainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rideeaze.views.activity.DriverSignUpRegisterActivity"
+            android:parentActivityName="com.rideeaze.views.activity.DriverSignUpActivity"
+            android:label="Account"
+            android:theme="@style/AppThemeAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rideeaze.views.activity.DriverSignUpActivity" />
+        </activity>
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.GpsSettingsActivity"
+            android:parentActivityName="com.rideeaze.views.fragmentactivity.SettingActivity"
+            android:label="Settings"
+            android:theme="@style/AppThemeAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rideeaze.views.fragmentactivity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".views.drivershedule.DriverSheduleActivity"
+            android:theme="@style/AppCustomCompatTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.HelpSupportActivity"
+            android:parentActivityName="com.rideeaze.views.fragmentactivity.SettingActivity"
+            android:label="Settings"
+            android:theme="@style/AppThemeAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rideeaze.views.fragmentactivity.SettingActivity" />
+        </activity>
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.notes_activity"
+            android:label="@string/title_activity_notes_activity" >
+        </activity>
+        <activity
+            android:name="com.rideeaze.views.fragmentactivity.MyAccountActivity"
+            android:screenOrientation="portrait" />
+
+
+        <receiver
+            android:name="com.rideeaze.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.driverapp" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.littlefluffytoys.littlefluffylocationlibrary.StartupBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.littlefluffytoys.littlefluffylocationlibrary.PassiveLocationChangedReceiver"
+            android:exported="true" />
+        <receiver android:name="com.rideeaze.services.location.DriverLocationService" >
+            <intent-filter>
+                <action
+                    android:name="com.driverapp.littlefluffylocationlibrary.LOCATION_CHANGED"
+                    android:exported="false" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.littlefluffytoys.littlefluffylocationlibrary.LocationBroadcastService" />
+        <service android:name="com.rideeaze.GCMIntentService" />
+        <service
+            android:name="com.rideeaze.services.UpdatePositionService"
+            android:enabled="true" />
+        <service
+            android:name="com.rideeaze.services.BootService"
+            android:enabled="true" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6360e26d35ef9ce314510ce9d60e0f227c5a01b4" />
+    </application>
+
+</manifest>

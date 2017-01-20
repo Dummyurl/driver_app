@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#80000000"
+    android:weightSum="1">
+    <!--android:background="#80000000"-->
+
+    <!-- http://stackoverflow.com/questions/25174165/transparent-alertdialog-has-black-background -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car1_rl_sedan"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_1"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_1"
+                    android:background="@drawable/vehicle_style_bg_top_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_sedan_tv"
+                    android:background="@drawable/car_sedan_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_1"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_1"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_sedan"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_1"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car2_rl_suv"
+            android:orientation="horizontal"
+            android:layout_below="@+id/car1_rl_sedan">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_2"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_2"
+                    android:background="@drawable/vehicle_style_bg_center_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_suv_tv"
+                    android:background="@drawable/car_suv_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_2"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_2"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_suv"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_2"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car3_rl_limo"
+            android:orientation="horizontal"
+            android:layout_below="@+id/car2_rl_suv">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_3"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_3"
+                    android:background="@drawable/vehicle_style_bg_center_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_limo_tv"
+                    android:background="@drawable/car_limo_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_3"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_3"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_limo"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_3"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car4_rl_van"
+            android:orientation="horizontal"
+            android:layout_below="@+id/car3_rl_limo">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_4"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_4"
+                    android:background="@drawable/vehicle_style_bg_center_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_van_tv"
+                    android:background="@drawable/car_van_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_4"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_4"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_van"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_4"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car5_rl_shuttle"
+            android:orientation="horizontal"
+            android:layout_below="@+id/car4_rl_van">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_5"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_5"
+                    android:background="@drawable/vehicle_style_bg_center_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_shuttle_tv"
+                    android:background="@drawable/car_shuttle_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_5"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_5"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_shuttle"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_5"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/car6_rl_bus"
+            android:orientation="horizontal"
+            android:layout_below="@+id/car5_rl_shuttle">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/car_image_bg_6"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/car_btn_6"
+                    android:background="@drawable/vehicle_style_bg_bottom_click"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/style_bus_tv"
+                    android:background="@drawable/car_bus_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_rl_6"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/arrow_6"
+                    android:background="@drawable/vehicle_style_arrow"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_ui_car_title_bus"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/arrow_6"
+                    android:layout_marginRight="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
